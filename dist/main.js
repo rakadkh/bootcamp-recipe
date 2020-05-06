@@ -4,7 +4,7 @@ const fetch = function () {
     
     $.get(`/recipes/${input}`, function (recipes) {
         if(recipes!=null){
-            renderer=new Render()
+            const renderer=new Render()
             renderer.render(recipes)
         }
     })
